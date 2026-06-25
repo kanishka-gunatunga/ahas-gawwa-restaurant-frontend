@@ -42,13 +42,13 @@ export default function CustomerHeader({
           <Megaphone className="h-4 w-4" />
           Send Promotion
         </button>
-        <button
+        {/* <button
           onClick={onAddClick}
           className="flex h-11 items-center gap-2 rounded-xl bg-[#EA580C] cursor-pointer px-5 text-[14px] font-bold text-white shadow-lg shadow-primary/20 transition-all hover:bg-primary/90 hover:scale-[1.02] active:scale-[0.98]"
         >
           <UserPlus className="h-4 w-4" />
           New Customer
-        </button>
+        </button> */}
       </div>
     </div>
   );

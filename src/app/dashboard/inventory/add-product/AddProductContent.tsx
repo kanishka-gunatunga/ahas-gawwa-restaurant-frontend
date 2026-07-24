@@ -844,9 +844,11 @@ export default function AddProductContent() {
                                 key={combo.combination}
                                 className="rounded-xl border border-[#E2E8F0] bg-white p-4"
                               >
-                                <div className="mb-3 font-['Inter'] text-sm font-bold text-[#45556C]">
-                                  {combo.combination}
-                                </div>
+                               {combo.combination !== "Standard" && (
+                                  <div className="mb-3 font-['Inter'] text-sm font-bold text-[#45556C]">
+                                    {combo.combination}
+                                  </div>
+                                )}
                                 <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                                   <div>
                                     <label className="mb-1 block font-['Inter'] text-xs font-bold text-[#45556C]">
